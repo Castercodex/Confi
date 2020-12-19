@@ -1,0 +1,250 @@
+@media screen and (max-width: 1149px) {
+  .overview {
+    .introduction {
+      .navigations {
+        right: 40px;
+      }
+      .scroll-down {
+        right: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 950px) {
+  .about-us {
+    .about-flex {
+      display: block;
+    }
+  }
+
+  .prices {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .prices-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 100px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .head {
+    position: fixed;
+    background: #ffffff;
+    z-index: 20;
+    nav {
+      .nav-links {
+        position: absolute;
+        top: -1000px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        flex-flow: column;
+        width: 100%;
+        height: 50vh;
+        background: #ffffff;
+        color: #ffffff;
+        animation: navend 0.5s linear;
+        .nav-link {
+          color: #000000;
+        }
+      }
+      .nav-mobile {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: column;
+        animation: navbegin 0.3s linear;
+        position: fixed;
+        top: 3rem;
+        height: 50vh;
+        width: 100%;
+        padding: 0;
+        // top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+      }
+    }
+    .hamburger {
+      display: flex;
+      justify-content: right;
+      align-items: flex-end;
+      z-index: 100;
+      .cancel-view {
+        display: block;
+      }
+    }
+  }
+  .overview {
+    .introduction {
+      .intro-text {
+        p {
+          left: 0;
+          text-align: justify;
+        }
+      }
+      .enroll-btn {
+        .enroll {
+          left: 0;
+        }
+      }
+    }
+  }
+  .about-us {
+    .about-flex {
+      .about-img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .instructor {
+    .instructors-flex {
+      .instructors-img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 650px) {
+  .overview {
+    .introduction {
+      .intro-img {
+        transform: translate(5%, -50%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overview {
+    .introduction {
+      .intro-img {
+        transform: translate(-50%, -50%);
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .intro-text {
+        display: none;
+      }
+      .enroll-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        .enroll {
+          left: 0;
+          top: 300px;
+        }
+      }
+    }
+  }
+  .foot {
+    font-size: 10px;
+    p {
+      line-height: 10px;
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .overview {
+    .introduction {
+      .enroll-btn {
+        .enroll {
+          top: 300px;
+        }
+      }
+    }
+  }
+  .instructor {
+    .instructors-flex {
+      display: block;
+    }
+  }
+  .instructor {
+    .instructors-flex {
+      .instructors-img {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        #back {
+          left: -50px;
+        }
+      }
+      h3 {
+        padding-top: 50px;
+      }
+    }
+  }
+
+  .prices {
+    text-align: center;
+    .categories {
+      display: block;
+      .category {
+        font-size: 10px;
+      }
+    }
+    .prices-grid {
+      display: flex;
+      justify-content: space-around;
+      min-height: 200vh;
+      align-items: center;
+      flex-flow: column;
+
+      .card {
+        width: 200px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .overview {
+    .introduction {
+      .enroll-btn {
+        .enroll {
+          top: 200px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 350px) {
+  .overview {
+    .introduction {
+      .enroll-btn {
+        .enroll {
+          top: 200px;
+        }
+      }
+    }
+  }
+
+  .about-us {
+    .about-flex {
+      .about-img {
+        .front-img {
+          top: 10px;
+          left: 30px;
+        }
+      }
+    }
+  }
+  .qoutes {
+    font-size: 10px;
+  }
+  .instructor {
+    .instructors-flex {
+      font-size: 10px;
+    }
+  }
+}

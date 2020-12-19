@@ -1,0 +1,28 @@
+@keyframes navbegin{
+    from {
+        top: -1000px;
+        // opacity: 0;
+    }
+    to {
+        top: 3rem ;
+        // opacity: 1;
+    }
+}
+@keyframes navend{
+    from {
+        top: 3rem;
+        // opacity: 0;
+    }
+    to {
+        top: -1000px ;
+        // opacity: 1;
+    }
+}
+@keyframes cancel{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

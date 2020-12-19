@@ -1,0 +1,840 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #0775e2;
+}
+
+.head {
+  position: absolute;
+  top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 2;
+  padding-top: 10px;
+}
+
+.head .img {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  z-index: 20;
+}
+
+.head .empty {
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+}
+
+.head nav {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.head nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.head nav .nav-links .nav-link {
+  text-decoration: none;
+  list-style: none;
+  color: #adadad;
+}
+
+.head .hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.head .hamburger .cancel {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: none;
+  -webkit-animation: cancel 0.5s linear;
+          animation: cancel 0.5s linear;
+}
+
+.overview {
+  padding: 0 50px 0 50px;
+  min-height: 100vh;
+  background: url(../img/confident.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overview .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.overview .introduction .intro-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.overview .introduction .intro-text p {
+  position: relative;
+  top: -100px;
+  left: 200px;
+  font-weight: bolder;
+  font-family: cursive;
+}
+
+.overview .introduction .intro-text .intro-heading {
+  font-size: 200px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 20px;
+  color: #363636;
+  line-height: 150px;
+}
+
+.overview .introduction .intro-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(15%, -50%);
+          transform: translate(15%, -50%);
+}
+
+.overview .introduction .intro-img img {
+  width: 80%;
+  height: 80%;
+}
+
+.overview .introduction .enroll-btn .enroll {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  top: 200px;
+  left: 200px;
+  background: #0775e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.overview .introduction .navigations {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 10vh;
+  z-index: 9;
+}
+
+.overview .introduction .navigations .nav-circle {
+  position: fixed;
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #b6b6b6;
+  border-radius: 100px;
+}
+
+.overview .introduction .navigations .active {
+  background: #0775e2;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.overview .introduction .scroll-down {
+  color: #ffffff;
+  position: fixed;
+  background: #0775e2;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+  bottom: 40px;
+  right: 0px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.overview .introduction .foot-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 10%;
+  position: relative;
+  top: 250px;
+}
+
+.about-us {
+  padding: 0 50px 0 50px;
+}
+
+.about-us .about-head {
+  line-height: 100px;
+  color: #525252;
+}
+
+.about-us .about-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-us .about-flex .paragraph {
+  width: 100%;
+  color: #8b8a8a;
+}
+
+.about-us .about-flex .about-link {
+  line-height: 50px;
+}
+
+.about-us .about-flex .about-link a {
+  text-decoration: none;
+  color: #0775e2;
+}
+
+.about-us .about-flex .about-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us .about-flex .about-img .back-img {
+  z-index: -6;
+}
+
+.about-us .about-flex .about-img .front-img {
+  position: relative;
+  left: 80px;
+  top: 150px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.288);
+          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.288);
+}
+
+.about-us .qoutes {
+  text-align: center;
+}
+
+.about-us .qoutes h1 {
+  color: #f1efef;
+  font-family: sans-serif;
+  line-height: 100px;
+  font-size: 90px;
+}
+
+.about-us .qoutes h3 {
+  color: #7a7a7a;
+}
+
+.instructor {
+  padding: 0 50px 0 50px;
+}
+
+.instructor .instructor-head {
+  line-height: 200px;
+  text-align: center;
+  color: #818181;
+  letter-spacing: 20px;
+}
+
+.instructor .instructors-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instructor .instructors-flex .instructors-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.instructor .instructors-flex .instructors-img #back {
+  position: relative;
+  left: -120px;
+  z-index: -1;
+}
+
+.instructor .instructors-flex h3 {
+  line-height: 1px;
+  letter-spacing: 10px;
+  color: #8b8a8a;
+}
+
+.instructor .instructors-flex .role {
+  line-height: 50px;
+  letter-spacing: 5px;
+  color: #e6e3e3;
+}
+
+.instructor .instructors-flex .para {
+  padding-top: 20px;
+  color: #858383;
+}
+
+.instructor .instructors-flex .para .instructor-link {
+  line-height: 50px;
+}
+
+.instructor .instructors-flex .para .instructor-link a {
+  text-decoration: none;
+}
+
+.instructor .qoutes {
+  text-align: center;
+}
+
+.instructor .qoutes h1 {
+  color: #f1efef;
+  font-family: sans-serif;
+  line-height: 100px;
+  font-size: 90px;
+}
+
+.instructor .qoutes h3 {
+  color: #7a7a7a;
+}
+
+.prices {
+  padding: 0 50px 0 50px;
+  position: relative;
+  top: 100px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.prices h1 {
+  text-align: center;
+  padding-top: 100px;
+  line-height: 100px;
+  letter-spacing: 5px;
+  color: #8b8a8a;
+}
+
+.prices .categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  line-height: 50px;
+}
+
+.prices .categories .category {
+  font-size: 15px;
+  color: #a0a0a0;
+}
+
+.prices .categories .active {
+  color: #0775e2;
+}
+
+.prices .prices-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 100px;
+  width: 100%;
+  padding-top: 50px;
+  min-height: 50vh;
+}
+
+.prices .prices-grid .card {
+  cursor: pointer;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  line-height: 50px;
+  height: 250px;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.226);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.226);
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+}
+
+.prices .prices-grid .card p .duration {
+  color: #aca8a8;
+}
+
+.prices .prices-grid .card h3 {
+  color: #9e9a9a;
+}
+
+.prices .prices-grid .card h3 span {
+  color: #4b4949;
+}
+
+.prices .prices-grid .card .submit-btn .submit {
+  border: 2px solid #0775e2;
+  background: transparent;
+  color: #000000;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
+  cursor: pointer;
+}
+
+.prices .prices-grid .card:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.253), 0px 1px 10px 0px rgba(0, 0, 0, 0.199);
+          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.253), 0px 1px 10px 0px rgba(0, 0, 0, 0.199);
+  background: #ffffff;
+}
+
+.prices .prices-grid .card:hover .submit-btn .submit {
+  background: #0775e2;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #dad8d8;
+  position: relative;
+  top: 100px;
+  padding-left: 0;
+  min-height: 30vh;
+  color: #525252;
+}
+
+.foot .empty {
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+}
+
+.foot p {
+  line-height: 50px;
+}
+
+.foot .foot-logo {
+  -webkit-box-flex: 0.2;
+      -ms-flex: 0.2;
+          flex: 0.2;
+}
+
+.foot .foot-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.foot .foot-text a {
+  text-decoration: none;
+  color: #525252;
+}
+
+.foot .foot-links {
+  text-align: right;
+}
+
+.foot .foot-links .fa {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1149px) {
+  .overview .introduction .navigations {
+    right: 40px;
+  }
+  .overview .introduction .scroll-down {
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .about-us .about-flex {
+    display: block;
+  }
+  .prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .prices .prices-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .head {
+    position: fixed;
+    background: #ffffff;
+    z-index: 20;
+  }
+  .head nav .nav-links {
+    position: absolute;
+    top: -1000px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    width: 100%;
+    height: 50vh;
+    background: #ffffff;
+    color: #ffffff;
+    -webkit-animation: navend 0.5s linear;
+            animation: navend 0.5s linear;
+  }
+  .head nav .nav-links .nav-link {
+    color: #000000;
+  }
+  .head nav .nav-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-animation: navbegin 0.3s linear;
+            animation: navbegin 0.3s linear;
+    position: fixed;
+    top: 3rem;
+    height: 50vh;
+    width: 100%;
+    padding: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
+  .head .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    z-index: 100;
+  }
+  .head .hamburger .cancel-view {
+    display: block;
+  }
+  .overview .introduction .intro-text p {
+    left: 0;
+    text-align: justify;
+  }
+  .overview .introduction .enroll-btn .enroll {
+    left: 0;
+  }
+  .about-us .about-flex .about-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .instructor .instructors-flex .instructors-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .overview .introduction .intro-img {
+    -webkit-transform: translate(5%, -50%);
+            transform: translate(5%, -50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .overview .introduction .intro-img {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .overview .introduction .intro-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .overview .introduction .intro-text {
+    display: none;
+  }
+  .overview .introduction .enroll-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .overview .introduction .enroll-btn .enroll {
+    left: 0;
+    top: 300px;
+  }
+  .foot {
+    font-size: 10px;
+  }
+  .foot p {
+    line-height: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .overview .introduction .enroll-btn .enroll {
+    top: 300px;
+  }
+  .instructor .instructors-flex {
+    display: block;
+  }
+  .instructor .instructors-flex .instructors-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .instructor .instructors-flex .instructors-img #back {
+    left: -50px;
+  }
+  .instructor .instructors-flex h3 {
+    padding-top: 50px;
+  }
+  .prices {
+    text-align: center;
+  }
+  .prices .categories {
+    display: block;
+  }
+  .prices .categories .category {
+    font-size: 10px;
+  }
+  .prices .prices-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-height: 200vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .prices .prices-grid .card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .overview .introduction .enroll-btn .enroll {
+    top: 200px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .overview .introduction .enroll-btn .enroll {
+    top: 200px;
+  }
+  .about-us .about-flex .about-img .front-img {
+    top: 10px;
+    left: 30px;
+  }
+  .qoutes {
+    font-size: 10px;
+  }
+  .instructor .instructors-flex {
+    font-size: 10px;
+  }
+}
+
+@-webkit-keyframes navbegin {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 3rem;
+  }
+}
+
+@keyframes navbegin {
+  from {
+    top: -1000px;
+  }
+  to {
+    top: 3rem;
+  }
+}
+
+@-webkit-keyframes navend {
+  from {
+    top: 3rem;
+  }
+  to {
+    top: -1000px;
+  }
+}
+
+@keyframes navend {
+  from {
+    top: 3rem;
+  }
+  to {
+    top: -1000px;
+  }
+}
+
+@-webkit-keyframes cancel {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes cancel {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
