@@ -1,0 +1,95 @@
+.admission-intro {
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  top: 20vh;
+  min-height: 100vh;
+  .students-place {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .title {
+      line-height: 100px;
+      text-align: center;
+      letter-spacing: 5px;
+    }
+    .students-img{
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .btn {
+      line-height: 100px;
+      .read {
+        background: transparent;
+        color: #000000;
+        border: 1px solid #0091f1;
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        transition: 0.3s linear;
+        cursor: pointer;
+        &:hover {
+          background: #0091f1;
+          color: #ffffff;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}
+.application {
+  padding-right: 50px;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  .admit-img {
+    img {
+      height: 80%;
+      width: 80%;
+    }
+  }
+  .admit-card {
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border: 1px solid #eeeeee;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-flow: column;
+    min-height: 80vh;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.274);
+    .heading {
+      padding-top: 100px;
+    }
+    .paragraph {
+      padding-top: 10%;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+    .btns {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      .btn-ad {
+        line-height: 200px;
+        .btn {
+          width: 150px;
+          height: 50px;
+          border: none;
+          font-size: 15px;
+        }
+        .primary {
+          background: #00f150;
+        }
+        .secondary {
+          background: transparent;
+          border: 1px solid #0091f1;
+        }
+      }
+    }
+  }
+}

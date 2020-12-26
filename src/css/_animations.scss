@@ -26,3 +26,25 @@
         opacity: 1;
     }
 }
+@keyframes nav_bar {
+  0% {
+    opacity: 0;
+    height: 0vh;
+  }
+  25% {
+    opacity: 0.2;
+    height: 15vh;
+  }
+  50% {
+    opacity: 0.5;
+    height: 20vh;
+  }
+  75% {
+    opacity: 0.7;
+    height: 15vh;
+  }
+  100% {
+    opacity: 1;
+    height: 10vh;
+  }
+}

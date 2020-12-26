@@ -1,0 +1,128 @@
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+.blog {
+  position: relative;
+  top: 20vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 150vh;
+}
+
+.blog .blog-overview {
+  line-height: 30px;
+}
+
+.blog .blog-overview .article-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.blog .blog-overview .article-text h1 {
+  font-size: 25px;
+  color: #000000;
+}
+
+.blog .blog-overview .article-text .category,
+.blog .blog-overview .article-text .article-paragraph {
+  color: #5e5d5d;
+}
+
+.blog .blog-overview .article-text .poster-details {
+  color: #b4b4b4;
+}
+
+.blog .blog-navigators .search {
+  border: 1px solid #e7e7e7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 20vh;
+  line-height: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.blog .blog-navigators .search h1 {
+  text-align: left;
+}
+
+.blog .blog-navigators .search .input {
+  font-size: 18px;
+}
+
+.blog .blog-navigators .search .input input {
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+  width: 300px;
+  font-size: 18px;
+}
+
+.blog .blog-navigators .posts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  border: 1px solid #e7e7e7;
+  padding: 50px;
+}
+
+.blog .blog-navigators .posts .post {
+  padding: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog .blog-navigators .posts .post .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.blog .blog-navigators .posts .post .img img {
+  width: 100px;
+  height: 80px;
+}
+
+.blog .blog-navigators .posts .post .info {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  color: #8b8b8b;
+}
+/*# sourceMappingURL=blog.css.map */

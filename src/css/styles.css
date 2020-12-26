@@ -14,6 +14,24 @@ a {
   color: #0775e2;
 }
 
+.nav-active {
+  letter-spacing: 3px;
+}
+
+.nav-active li {
+  color: #585858;
+}
+
+.nav-active::after {
+  display: block;
+  content: "";
+  background: #0775e2;
+  width: 100%;
+  height: 1px;
+  -webkit-box-shadow: 0px 1px 10px 0px #0775e2;
+          box-shadow: 0px 1px 10px 0px #0775e2;
+}
+
 .head {
   position: absolute;
   top: 0px;
@@ -30,11 +48,15 @@ a {
   padding-top: 10px;
 }
 
-.head .img {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
-  z-index: 20;
+.head .nav {
+  background-color: #ffffff;
+  border: none;
+  position: fixed;
+  min-height: 15vh;
+  z-index: 1;
+  top: 0px;
+  -webkit-animation: nav_bar 0.7s linear;
+          animation: nav_bar 0.7s linear;
 }
 
 .head .empty {
@@ -44,9 +66,25 @@ a {
 }
 
 .head nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+}
+
+.head nav .img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  z-index: 20;
 }
 
 .head nav .nav-links {
@@ -58,12 +96,22 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50%;
 }
 
 .head nav .nav-links .nav-link {
   text-decoration: none;
   list-style: none;
   color: #adadad;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.head nav .nav-links .nav-link:hover {
+  color: #585858;
+  letter-spacing: 3px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .head .hamburger {
@@ -556,6 +604,217 @@ a {
   font-size: 20px;
 }
 
+.admission-intro {
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+  top: 20vh;
+  min-height: 100vh;
+}
+
+.admission-intro .students-place {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.admission-intro .students-place .title {
+  line-height: 100px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.admission-intro .students-place .students-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.admission-intro .students-place .btn {
+  line-height: 100px;
+}
+
+.admission-intro .students-place .btn .read {
+  background: transparent;
+  color: #000000;
+  border: 1px solid #0091f1;
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+
+.admission-intro .students-place .btn .read:hover {
+  background: #0091f1;
+  color: #ffffff;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.application {
+  padding-right: 50px;
+  padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.application .admit-img img {
+  height: 80%;
+  width: 80%;
+}
+
+.application .admit-card {
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border: 1px solid #eeeeee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 80vh;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.274);
+          box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.274);
+}
+
+.application .admit-card .heading {
+  padding-top: 100px;
+}
+
+.application .admit-card .paragraph {
+  padding-top: 10%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.application .admit-card .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.application .admit-card .btns .btn-ad {
+  line-height: 200px;
+}
+
+.application .admit-card .btns .btn-ad .btn {
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-size: 15px;
+}
+
+.application .admit-card .btns .btn-ad .primary {
+  background: #00f150;
+}
+
+.application .admit-card .btns .btn-ad .secondary {
+  background: transparent;
+  border: 1px solid #0091f1;
+}
+
+.contact {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contact .card {
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 100vh;
+  margin-top: 100px;
+  width: 100%;
+}
+
+.contact .card .heading h1::after {
+  display: block;
+  content: "";
+  background: #000000;
+  width: 50px;
+  height: 2px;
+  margin: 30px;
+}
+
+.contact .card .heading h1::before {
+  display: block;
+  content: "";
+  background: #000000;
+  width: 50px;
+  height: 2px;
+  margin: 30px;
+}
+
+.contact .card form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 50vh;
+}
+
+.contact .card form input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #000000;
+  font-size: 15px;
+}
+
+.contact .card form .submit {
+  border: none;
+  width: 100px;
+  height: 40px;
+  color: #ffffff;
+  background: #00a2ff;
+}
+
 @media screen and (max-width: 1149px) {
   .overview .introduction .navigations {
     right: 40px;
@@ -589,6 +848,26 @@ a {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
+  }
+  .admission-intro .students-place {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    min-height: 100vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .application {
+    position: relative;
+    top: 100px;
+  }
+  .application .admit-img {
+    display: none;
+  }
+  .application .admit-card {
+    border-bottom-right-radius: 10px;
   }
 }
 
@@ -671,6 +950,67 @@ a {
   .instructor .instructors-flex .instructors-img img {
     width: 100%;
     height: 100%;
+  }
+  .blog {
+    display: block;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .blog .blog-overview {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    text-align: justify;
+    width: 100%;
+  }
+  .blog .blog-overview .article-text {
+    text-align: left;
+  }
+  .blog .posts {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .blog .blog-navigators {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .blog .blog-navigators .search {
+    width: 100%;
+  }
+  .blog .blog-navigators .posts {
+    width: 100%;
   }
 }
 
@@ -761,6 +1101,26 @@ a {
   .prices .prices-grid .card {
     width: 200px;
   }
+  .blog .blog-navigators .search .input input {
+    width: 200px;
+    font-size: 10px;
+  }
+  .application {
+    position: relative;
+    top: 100px;
+    font-size: 13px;
+  }
+  .application .admit-img {
+    display: none;
+  }
+  .application .admit-card {
+    border-bottom-right-radius: 10px;
+  }
+  .application .admit-card .btns .btn-ad .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -782,6 +1142,9 @@ a {
   }
   .instructor .instructors-flex {
     font-size: 10px;
+  }
+  .blog .blog-navigators .search .input input {
+    width: 150px;
   }
 }
 
@@ -836,6 +1199,52 @@ a {
   }
   to {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes nav_bar {
+  0% {
+    opacity: 0;
+    height: 0vh;
+  }
+  25% {
+    opacity: 0.2;
+    height: 15vh;
+  }
+  50% {
+    opacity: 0.5;
+    height: 20vh;
+  }
+  75% {
+    opacity: 0.7;
+    height: 15vh;
+  }
+  100% {
+    opacity: 1;
+    height: 10vh;
+  }
+}
+
+@keyframes nav_bar {
+  0% {
+    opacity: 0;
+    height: 0vh;
+  }
+  25% {
+    opacity: 0.2;
+    height: 15vh;
+  }
+  50% {
+    opacity: 0.5;
+    height: 20vh;
+  }
+  75% {
+    opacity: 0.7;
+    height: 15vh;
+  }
+  100% {
+    opacity: 1;
+    height: 10vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

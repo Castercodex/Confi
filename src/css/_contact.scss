@@ -1,0 +1,62 @@
+.contact {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%,-50%);
+
+  padding-left: 50px;
+  padding-right: 50px;
+  .card {
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    min-height: 100vh;
+    margin-top: 100px;
+    width: 100%;
+    .heading {
+      h1 {
+        &::after {
+          display: block;
+          content: "";
+          background: #000000;
+          width: 50px;
+          height: 2px;
+          margin: 30px;
+        }
+        &::before {
+          display: block;
+          content: "";
+          background: #000000;
+          width: 50px;
+          height: 2px;
+          margin: 30px;
+        }
+      }
+    }
+    form {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: column;
+      min-height: 50vh;
+      
+      input {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #000000;
+        font-size: 15px;
+      }
+      .submit{
+          border: none;
+          width: 100px;
+          height: 40px;
+          color: #ffffff;
+          background: #00a2ff;
+      }
+    
+    }
+  }
+}
